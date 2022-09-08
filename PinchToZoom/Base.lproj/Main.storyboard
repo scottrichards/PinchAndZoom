@@ -16,21 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5e-3h-lo3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5e-3h-lo3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GrandCanyon" translatesAutoresizingMaskIntoConstraints="NO" id="bKH-yP-h99">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrandCanyon" translatesAutoresizingMaskIntoConstraints="NO" id="bKH-yP-h99">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bKH-yP-h99" secondAttribute="trailing" id="A5Q-sL-vg7"/>
+                                    <constraint firstAttribute="bottom" secondItem="bKH-yP-h99" secondAttribute="bottom" id="JvW-gr-jO6"/>
+                                    <constraint firstItem="bKH-yP-h99" firstAttribute="bottom" secondItem="qeS-MG-CMU" secondAttribute="bottom" id="UMl-HK-exv"/>
+                                    <constraint firstItem="bKH-yP-h99" firstAttribute="centerX" secondItem="f5e-3h-lo3" secondAttribute="centerX" id="VTI-Nt-vfg"/>
+                                    <constraint firstItem="bKH-yP-h99" firstAttribute="leading" secondItem="f5e-3h-lo3" secondAttribute="leading" id="Y0G-Tb-cAI"/>
+                                    <constraint firstItem="bKH-yP-h99" firstAttribute="top" secondItem="y33-zC-K7f" secondAttribute="top" id="Y5u-94-xzr"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="y33-zC-K7f"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qeS-MG-CMU"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f5e-3h-lo3" secondAttribute="trailing" id="4dQ-xW-GeW"/>
+                            <constraint firstItem="f5e-3h-lo3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Whr-q0-rE5"/>
+                            <constraint firstItem="f5e-3h-lo3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zpy-N0-5rP"/>
+                            <constraint firstAttribute="bottom" secondItem="f5e-3h-lo3" secondAttribute="bottom" id="nLi-7e-m5H"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="bKH-yP-h99" id="3h5-Lb-XBo"/>
